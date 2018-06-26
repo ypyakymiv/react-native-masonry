@@ -122,6 +122,7 @@ export default class Masonry extends Component {
 		return (
 			<View style={{flex: 1}} onLayout={(event) => this._setParentDimensions(event)}>
 			  <ListView
+				showsVerticalScrollIndicator={false}
 				contentContainerStyle={styles.masonry__container}
 				dataSource={this.state.dataSource}
 				enableEmptySections
